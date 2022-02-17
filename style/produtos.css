@@ -1,0 +1,91 @@
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.imagem-logo:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /*remove o sublinhado padrão dos links */
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block; /*alinhados em em uma única linha, porém, com o comportamento em bloco */
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* Os 30px de padding agora estão considerados nos 30% de width. Caso contrário, ele somaria as 3 caixas (90%) mais a margem (9%) além dos 30px */
+    border: 2px black solid; /* Três informações importantes sobre a borda: Tamanho, tipo e cor */
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #c78c19;
+    transform: scale(1.1);
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos li:active {
+    border-color: #088c19;
+}
+
+.produtos h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*Somente para cima, ou seja, margin-top:10px */
+}
+
+footer {
+    text-align: center;
+    background: url("/imagens/bg.jpg"); /*imagem de fundo */
+    padding: 40px;
+}
